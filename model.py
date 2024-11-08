@@ -3,7 +3,7 @@ import torch.nn as nn
 from transformers import BertModel, BertTokenizer
 from torchcrf import CRF
 
-# 定义BERT + CNN + CRF模型
+# 定义BERT + CNN 
 class BertCNN(nn.Module):
     def __init__(self, bert_model_name='bert-base-uncased', num_labels=2, kernel_size=3, num_filters=256):
         super(BertCNN, self).__init__()
